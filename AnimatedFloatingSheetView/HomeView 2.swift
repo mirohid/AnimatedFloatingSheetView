@@ -32,7 +32,7 @@ struct HomeView2: View {
             .padding()
 
             if let sheet = selectedSheet {
-                Color.black.opacity(0.3) // Dim background when sheet appears
+                Color.black.opacity(0.1) // Dim background when sheet appears
                     .edgesIgnoringSafeArea(.all)
                     .onTapGesture {
                         withAnimation {
@@ -83,7 +83,7 @@ struct FloatingSheetView2: View {
         }
         .frame(maxWidth: .infinity)
         .frame(height: 350)
-        .background(Color.white)
+        .background(Color.black)
         .cornerRadius(20)
         .shadow(radius: 10)
         .transition(.move(edge: .bottom).combined(with: .opacity))
